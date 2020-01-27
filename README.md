@@ -17,7 +17,7 @@ docker-compose up --build --exit-code-from app
 
 ### Heroku
 
-The `heroku.yml` manifest file is used to define a Heroku application.  The `run` command in heroku.yml will reference the `SCHEDULE_INTERNAL_SECONDS` environment variable (default: 30) and run this app on an internal in the Heroku environment.
+The `heroku.yml` manifest file is used to define a Heroku application stack.  The `run` command in heroku.yml will reference the `SCHEDULE_INTERNAL_SECONDS` environment variable (default: 30) and run this app on an internal in the Heroku environment.
 
 **Provisioning (one time)**
 
