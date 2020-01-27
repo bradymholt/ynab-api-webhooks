@@ -35,7 +35,7 @@ heroku scale app=1
 
 ## Environment Variables
 
-- **YNAB_API_TOKEN** - The [YNAB API access token](https://api.youneedabudget.com/#personal-access-tokens) (**required**) 
+- **YNAB_API_TOKEN** - The [YNAB API access token](https://api.youneedabudget.com/#personal-access-tokens). (**required**) 
 - **WEBHOOK_URL** - The URL to post changes to. (**required**) 
 - **BUDGET_ID** - The YNAB budget id to monitor.  (*default: "last-used"*)
 - **REDIS_URL** - The Redis server URL to connect to Redis.  (*default: "redis://localhost"*)
