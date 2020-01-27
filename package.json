@@ -1,0 +1,23 @@
+{
+  "name": "ynab-api-webhooks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node --transpile-only ./index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^13.5.0",
+    "@types/redis": "^2.8.14",
+    "@types/request": "^2.48.4",
+    "@types/request-promise-native": "^1.0.17",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.8",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5",
+    "ynab": "^1.17.0"
+  }
+}

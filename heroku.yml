@@ -1,0 +1,10 @@
+setup:
+  addons:
+    - plan: heroku-redis:hobby-dev    
+  config:
+    SCHEDULE_INTERNAL_SECONDS: 30   
+build:
+  docker:
+    app: Dockerfile
+run:
+   app: "while true; do npm start; sleep ${SCHEDULE_INTERNAL_SECONDS}; done"
