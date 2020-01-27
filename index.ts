@@ -32,15 +32,12 @@ redisClient.on("error", err => {
   error(err, true);
 });
 
-const keysAsync = promisify(redisClient.keys).bind(redisClient);
 const getAsync = promisify(redisClient.get).bind(redisClient);
 const setAsync = promisify(redisClient.set).bind(redisClient);
 
 (async function() {
-  const lastServerKnowledgeStorageKey = "lastServerKnowledge";
-  const keys = await keysAsync(lastServerKnowledgeStorageKey);
+  const lastServerKnowledgeStorageKey = "lastServerKnowledge";  
   // Fetch lastKnownServerKnowledge from Redis
-
   const lastKnownServerKnowledge =
     Number(await getAsync(lastServerKnowledgeStorageKey)) || 0;
   console.log(`lastKnownServerKnowledge: ${lastKnownServerKnowledge}`);
