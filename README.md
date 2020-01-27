@@ -22,7 +22,7 @@ The `heroku.yml` manifest file is used to define a Heroku application stack.  Th
 **Provisioning (one time)**
 
 ```
-heroku create ynab-webhooks --manifest
+heroku create ynab-api-webhooks --manifest
 heroku config:set YNAB_API_TOKEN=123 WEBHOOK_URL=https://mydomain.com/ynab-webhook-receive
 ```
 
